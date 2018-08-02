@@ -1,0 +1,11 @@
+1.
+- How to check a variable's type?
+Ans: type() function
+
+- In what cases, you will get SyntaxError from the compiler telling you that some of your variables have invalid names? Can you give 3 different examples of invalid names?
+Ans: SyntaxError occurs when you are trying to name a variable in a wrong/illegal/nonconventional way. It can also occurs when you are trying to assign one of the keywords in Python to a value.
+Ex:
+3s = 2
+a u = 3
+$ = 2
+True = 200
