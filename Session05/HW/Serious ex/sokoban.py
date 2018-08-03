@@ -101,9 +101,6 @@ while finish != True:
             box_move = False
         print('Undo Action!!')
         continue
-        # dest = dest_copy
-        # boxes = boxes_copy
-        # obs = obs_copy
     
     # Check if player is moving within map, then check if player is running into obstacles (if true then exit the loop and not 
     # move player), else change player's location. Player's prior location was copied for Undo.
