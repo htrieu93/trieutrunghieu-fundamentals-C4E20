@@ -12,7 +12,8 @@ all_customer = customers.find()
 
 refs = {
     'Word of mouth' : 0,
-    'Advertisements' : 0
+    'Advertisements' : 0,
+    'Events' : 0
 }
 
 for customer in all_customer:
@@ -20,6 +21,9 @@ for customer in all_customer:
         refs['Word of mouth'] += 1
     elif customer['ref'] == 'ads':
         refs['Advertisements'] += 1
+    elif customer['ref'] == 'events':
+        refs['Events'] += 1
+
 
 for key, value in refs.items():
     print('Number of customers by {}: {}'.format(key, value))
