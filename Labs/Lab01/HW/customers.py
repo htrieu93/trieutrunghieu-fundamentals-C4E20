@@ -24,11 +24,10 @@ for customer in all_customer:
     elif customer['ref'] == 'events':
         refs['Events'] += 1
 
-
 for key, value in refs.items():
     print('Number of customers by {}: {}'.format(key, value))
 
-plt.pie(refs.values(), labels = refs.keys())
+plt.pie(refs.values(), labels = refs.keys(), autopct = '%.1f%%')
 plt.axis('equal')
 
 plt.show()
